@@ -23,7 +23,7 @@ NTHREED:
    
 
   int 21h
-  NUMBER DW 41
+  NUMBER DW 5
   ANSWER DW ?
 
 

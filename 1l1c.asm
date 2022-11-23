@@ -2,12 +2,11 @@
 ; À¿¡¿ 1 - «¿ƒ¿Õ»≈ 1
 
 org 100h
-
 mov AX,X
 mov BX,Y
-MUL AX  
+MUL BX  
 mov BX, Z
-MUL AX
+MUL BX
 mov MLT, AX
 
 mov AX, X
@@ -17,7 +16,9 @@ mov BX, Z
 ADD AX, BX
 mov SM, AX
 
-ret
+ret  
+
+int 21h
 X DW 3
 Y DW 4
 Z DW 7
