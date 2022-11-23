@@ -10,13 +10,13 @@ mov CX, 3
 loopMain: 
 pop AX
 mov FIRST, AX
-mov BX, 2
-div BX 
+mov bl, 2
+div bl 
 mov AX, FIRST
-cmp DX, 1
-je EQUALS1
+cmp ah, 0
+je NONE1
 ; DX остаток CX лупы 
-jmp NONE1
+jmp EQUALS1
 
 EQUALS1:      ;нечёт
  
